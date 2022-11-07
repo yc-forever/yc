@@ -436,7 +436,7 @@ class Spider(Spider):  # 元类 默认的元类 type
         self.localTime = int(time.time())
         url = 'https://api.aliyundrive.com/token/refresh'
         if len(self.authorization) == 0 or self.timeoutTick - self.localTime <= 600:
-            token = requests.get('http://3.35.90.143:51079/down/g3QIP2Xui2T3').text
+            token = requests.get('https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/tk.json').text
             form = {
                 'refresh_token': token
             }
