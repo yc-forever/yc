@@ -1,10 +1,10 @@
 // import 'https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/libs/es6py.js';
 // import {是否正版,urlDeal,setResult,setResult2,setHomeResult,maoss,urlencode} from 'http://192.168.10.103:5705/libs/es6py.js';
 // import 'http://192.168.1.124:5705/libs/es6py.js';
-import cheerio from 'https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/libs/cheerio.min.js';
+import cheerio from 'https://raw.githubusercontent.com/yc-forever/PC/main/libs/cheerio.min.js';
 // import cheerio from 'http://192.168.10.103:5705/libs/cheerio.min.js';
-import 'https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/libs/crypto-js.js';
-import 'https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/libs/drT.js';
+import 'https://raw.githubusercontent.com/yc-forever/PC/main/libs/crypto-js.js';
+import 'https://raw.githubusercontent.com/yc-forever/PC/main/libs/drT.js';
 // import 'http://192.168.10.103:5705/libs/drT.js';
 // import muban from 'https://gitcode.net/qq_32394351/dr_py/-/raw/master/js/模板.js';
 // import muban from 'http://192.168.10.103:5705/admin/view/模板.js';
