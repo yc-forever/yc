@@ -3,14 +3,11 @@
     "md5": "56b91f848cb16e8878baffa09074ac5b",
     "sites": [
         {
-            "key": "py_douban",
+            "key": "豆瓣",
             "name": "📡 豆瓣",
             "type": 3,
-            "api": "py_douban",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 0,
-            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/py/py_douban.py"
+            "api": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/libs/drpy.min.js",
+            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/dr/drpy.js"
         },
         {
             "key": "py_alist",
