@@ -31,9 +31,9 @@ class Spider(Spider):  # 元类 默认的元类 type
 	def manualVideoCheck(self):
 		pass
 	def playerContent(self,flag,id,vipFlags):
-		if flag == '普画':
+		if flag == 'AliYun':
 			return self.originContent(flag,id,vipFlags)
-		elif flag == '原画':
+		elif flag == 'AliYun原画':
 			return self.fhdContent(flag,id,vipFlags)
 		else:
 			return 	{}		
@@ -212,7 +212,7 @@ class Spider(Spider):  # 元类 默认的元类 type
 			'vod_pic':infoJo['avatar'
     ],
 			'vod_content':tid,
-			'vod_play_from':'原画$$$普画'
+			'vod_play_from':'AliYun原画$$$AliYun'
 }
 		fileType = fileInfo['type'
 ]
