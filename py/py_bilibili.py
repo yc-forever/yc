@@ -20,6 +20,8 @@ class Spider(Spider):
     def homeContent(self, filter):
         result = {}
         cateManual = {
+			"2年级语文": "2年级语文",
+			"2年级数学": "2年级数学",
             "动态": "动态",
             "热门": "热门",
             "推荐": "推荐",
