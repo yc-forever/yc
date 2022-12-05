@@ -1,14 +1,16 @@
 # coding=utf-8
 # !/usr/bin/python
 import sys
-
-sys.path.append('..')
 from base.spider import Spider
 import json
+import threading
+import requests
 from requests import session, utils
 import os
 import time
 import base64
+
+sys.path.append('..')
 
 
 class Spider(Spider):
@@ -29,6 +31,7 @@ class Spider(Spider):
     def manualVideoCheck(self):
         pass
 
+    # 主页
     def homeContent(self, filter):
         result = {}
         cateManual = {
@@ -39,9 +42,11 @@ class Spider(Spider):
             "纪录片": "3",
             "综艺": "7",
             "全部": "全部",
-            "追番": "追番",
-            "追剧": "追剧",
+            # "追番追剧": "追番追剧",
             "时间表": "时间表",
+            # ————————以下可自定义关键字，结果以搜索方式展示————————
+            # "奥特曼": "奥特曼"
+
         }
         classes = []
         for k in cateManual:
@@ -50,18 +55,36 @@ class Spider(Spider):
                 'type_id': cateManual[k]
             })
         result['class'] = classes
-        if (filter):
+        if filter:
             result['filters'] = self.config['filter']
         return result
 
     # 用户cookies
     cookies = ''
     userid = ''
+    csrf = ''
 
     def getCookie(self):
         self.cookies = self.bilibili.getCookie()
         self.userid = self.bilibili.userid
+        self.csrf = self.bilibili.csrf
         return self.cookies
+
+        # 单用此文件，请注释掉删除上面4行，取消注释以下
+        # import http.cookies
+        # raw_cookie_line = ""
+        # simple_cookie = http.cookies.SimpleCookie(raw_cookie_line)
+        # cookie_jar = requests.cookies.RequestsCookieJar()
+        # cookie_jar.update(simple_cookie)
+        # rsp = session()
+        # rsp.cookies = cookie_jar
+        # content = self.fetch("https://api.bilibili.com/x/web-interface/nav", cookies=rsp.cookies)
+        # res = json.loads(content.text)
+        # if res["code"] == 0:
+        #     self.cookies = rsp.cookies
+        #     self.userid = res["data"].get('mid')
+        #     self.csrf = rsp.cookies['bili_jct']
+        # return cookie_jar
 
     # 将超过10000的数字换成成以万和亿为单位
     def zh(self, num):
@@ -76,15 +99,32 @@ class Spider(Spider):
                 p = str(num)
         return p
 
+    # 格式化图片，默认为80%质量的webp格式，降低内存占用
+    def format_img(self, img):
+        img += "@800h_80q.webp"  # 格式，[jpg/png/gif]@{width}w_{high}h_{quality}q.{format}
+        return img
+
+    # 将没有page_size参数的页面分页
+    def pagination(self, array, pg):
+        page_size = 10      # 默认单页视频数量为10，可自定义
+        max_number = page_size * int(pg)
+        min_number = max_number - page_size
+        return array[min_number:max_number]
+
+    # 记录观看历史
+    def post_history(self, aid, cid):
+        url = 'https://api.bilibili.com/x/v2/history/report?aid={0}&cid={1}&csrf={2}'.format(aid, cid, self.csrf)
+        requests.post(url=url, cookies=self.cookies)
+
     def homeVideoContent(self):
         result = {}
-        videos = self.get_rank(1)['list'][0:5]
+        videos = self.get_rank(1, 1)['list'][0:2]
         for i in [4, 2, 5, 3, 7]:
-            videos += self.get_rank2(i)['list'][0:5]
+            videos += self.get_rank2(i, 1)['list'][0:2]
         result['list'] = videos
         return result
 
-    def get_rank(self, tid):
+    def get_rank(self, tid, pg):
         result = {}
         url = 'https://api.bilibili.com/pgc/web/rank/list?season_type={0}&day=3'.format(tid)
         rsp = self.fetch(url, cookies=self.cookies)
@@ -93,25 +133,26 @@ class Spider(Spider):
         if jo['code'] == 0:
             videos = []
             vodList = jo['result']['list']
+            vodList = self.pagination(vodList, pg)
             for vod in vodList:
                 aid = str(vod['season_id']).strip()
                 title = vod['title'].strip()
                 img = vod['cover'].strip()
                 remark = vod['new_ep']['index_show']
                 videos.append({
-                    "vod_id": aid,
+                    "vod_id": 'ss' + aid,
                     "vod_name": title,
-                    "vod_pic": img,
+                    "vod_pic": self.format_img(img),
                     "vod_remarks": remark
                 })
             result['list'] = videos
-            result['page'] = 1
-            result['pagecount'] = 1
+            result['page'] = pg
+            result['pagecount'] = 9999
             result['limit'] = 90
             result['total'] = 999999
         return result
 
-    def get_rank2(self, tid):
+    def get_rank2(self, tid, pg):
         result = {}
         url = 'https://api.bilibili.com/pgc/season/rank/web/list?season_type={0}&day=3'.format(tid)
         rsp = self.fetch(url, cookies=self.cookies)
@@ -120,6 +161,7 @@ class Spider(Spider):
         if jo['code'] == 0:
             videos = []
             vodList = jo['data']['list']
+            vodList = self.pagination(vodList, pg)
             for vod in vodList:
                 aid = str(vod['season_id']).strip()
                 title = vod['title'].strip()
@@ -128,12 +170,12 @@ class Spider(Spider):
                 videos.append({
                     "vod_id": aid,
                     "vod_name": title,
-                    "vod_pic": img,
+                    "vod_pic": self.format_img(img),
                     "vod_remarks": remark
                 })
             result['list'] = videos
-            result['page'] = 1
-            result['pagecount'] = 1
+            result['page'] = pg
+            result['pagecount'] = 9999
             result['limit'] = 90
             result['total'] = 999999
         return result
@@ -142,7 +184,8 @@ class Spider(Spider):
         result = {}
         if len(self.cookies) <= 0:
             self.getCookie()
-        url = 'https://api.bilibili.com/x/space/bangumi/follow/list?type={2}&follow_status=0&pn={1}&ps=10&vmid={0}'.format(self.userid, pg, mode)
+        url = 'https://api.bilibili.com/x/space/bangumi/follow/list?type={2}&follow_status=0&pn={1}&ps=10&vmid={0}'.format(
+            self.userid, pg, mode)
         rsp = self.fetch(url, cookies=self.cookies)
         content = rsp.text
         jo = json.loads(content)
@@ -156,7 +199,7 @@ class Spider(Spider):
             videos.append({
                 "vod_id": aid,
                 "vod_name": title,
-                "vod_pic": img,
+                "vod_pic": self.format_img(img),
                 "vod_remarks": remark
             })
         result['list'] = videos
@@ -166,11 +209,12 @@ class Spider(Spider):
         result['total'] = 999999
         return result
 
-    def get_all(self, tid, pg, order, season_status, extend):
+    def get_all(self, tid, pg, order, season_status):
         result = {}
         if len(self.cookies) <= 0:
             self.getCookie()
-        url = 'https://api.bilibili.com/pgc/season/index/result?order={2}&pagesize=20&type=1&season_type={0}&page={1}&season_status={3}'.format(tid, pg, order, season_status)
+        url = 'https://api.bilibili.com/pgc/season/index/result?order={2}&pagesize=10&type=1&season_type={0}&page={1}&season_status={3}'.format(
+            tid, pg, order, season_status)
         rsp = self.fetch(url, cookies=self.cookies)
         content = rsp.text
         jo = json.loads(content)
@@ -184,7 +228,7 @@ class Spider(Spider):
             videos.append({
                 "vod_id": aid,
                 "vod_name": title,
-                "vod_pic": img,
+                "vod_pic": self.format_img(img),
                 "vod_remarks": remark
             })
         result['list'] = videos
@@ -211,7 +255,7 @@ class Spider(Spider):
                 videos1.append({
                     "vod_id": aid,
                     "vod_name": title,
-                    "vod_pic": img,
+                    "vod_pic": self.format_img(img),
                     "vod_remarks": remark
                 })
             videos2 = []
@@ -227,26 +271,25 @@ class Spider(Spider):
                         videos2.append({
                             "vod_id": aid,
                             "vod_name": title,
-                            "vod_pic": img,
+                            "vod_pic": self.format_img(img),
                             "vod_remarks": remark
                         })
-            result['list'] = videos2 + videos1
-            result['page'] = 1
-            result['pagecount'] = 1
+            result['list'] = self.pagination(videos2 + videos1, pg)
+            result['page'] = pg
+            result['pagecount'] = 9999
             result['limit'] = 90
             result['total'] = 999999
         return result
 
     def categoryContent(self, tid, pg, filter, extend):
-        result = {}
         if len(self.cookies) <= 0:
             self.getCookie()
         if tid == "1":
-            return self.get_rank(tid=tid)
+            return self.get_rank(tid=tid, pg=pg)
         elif tid in {"2", "3", "4", "5", "7"}:
-            return self.get_rank2(tid=tid)
+            return self.get_rank2(tid=tid, pg=pg)
         elif tid == "全部":
-            tid = '1'
+            tid = '1'  # 全部界面默认展示最多播放的番剧
             order = '2'
             season_status = '-1'
             if 'tid' in extend:
@@ -255,39 +298,83 @@ class Spider(Spider):
                 order = extend['order']
             if 'season_status' in extend:
                 season_status = extend['season_status']
-            return self.get_all(tid, pg, order, season_status, extend)
-        elif tid == "追番":
-            return self.get_zhui(pg, 1)
-        elif tid == "追剧":
-            return self.get_zhui(pg, 2)
+            return self.get_all(tid, pg, order, season_status)
+        elif tid == "追番追剧":
+            mode = '1'
+            if 'mode' in extend:
+                mode = extend['mode']
+            return self.get_zhui(pg, mode)
         elif tid == "时间表":
-            tid = 1
+            tid = '1'
             if 'tid' in extend:
                 tid = extend['tid']
             return self.get_timeline(tid, pg)
         else:
-            result = self.searchContent(key=tid,  quick="false")
+            result = self.searchContent(key=tid, quick="false")
         return result
 
     def cleanSpace(self, str):
         return str.replace('\n', '').replace('\t', '').replace('\r', '').replace(' ', '')
 
+    con = threading.Condition()
+
+    def get_season(self, n, nList, fromList, urlList, season_id, season_title):
+        url = 'https://api.bilibili.com/pgc/view/web/season?season_id={0}'.format(season_id)
+        try:
+            rsp = self.fetch(url, headers=self.header, cookies=self.cookies)
+            season = json.loads(rsp.text)
+        except:
+            with self.con:
+                nList.remove(n)
+                self.con.notify_all()
+            return
+        episode = season['result']['episodes']
+        if len(episode) == 0:
+            with self.con:
+                nList.remove(n)
+                self.con.notify_all()
+            return
+        playUrl = ''
+        for tmpJo in episode:
+            aid = tmpJo['aid']
+            cid = tmpJo['cid']
+            part = tmpJo['title'].replace("#", "﹟").replace("$", "﹩")
+            if tmpJo['badge'] != '':
+                part += ' 【' + tmpJo['badge'] + '】'
+            part += tmpJo['long_title'].replace("#", "﹟").replace("$", "﹩")
+            playUrl += '{0}${1}_{2}_bangumi#'.format(part, aid, cid)
+        with self.con:
+            while True:
+                if n == nList[0]:
+                    fromList.append(season_title)
+                    urlList.append(playUrl)
+                    nList.remove(n)
+                    self.con.notify_all()
+                    break
+                else:
+                    self.con.wait()
+
     def detailContent(self, array):
         aid = array[0]
-        url = "https://api.bilibili.com/pgc/view/web/season?season_id={0}".format(aid)
-        rsp = self.fetch(url, headers=self.header)
+        if 'ep' in aid:
+            aid = 'ep_id=' + aid.replace('ep', '')
+        elif 'ss' in aid:
+            aid = 'season_id=' + aid.replace('ss', '')
+        else:
+            aid = 'season_id=' + aid
+        url = "https://api.bilibili.com/pgc/view/web/season?{0}".format(aid)
+        rsp = self.fetch(url, headers=self.header, cookies=self.cookies)
         jRoot = json.loads(rsp.text)
         jo = jRoot['result']
         id = jo['season_id']
         title = jo['title']
-        pic = jo['cover']
-        # areas = jo['areas']['name']  改bilidanmu显示弹幕
+        s_title = jo['season_title']
+        img = jo['cover']
         typeName = jo['share_sub_title']
         date = jo['publish']['pub_time'][0:4]
         dec = jo['evaluate']
         remark = jo['new_ep']['desc']
         stat = jo['stat']
-        # 演员和导演框展示视频状态，包括以下内容：
         status = "弹幕: " + self.zh(stat['danmakus']) + "　点赞: " + self.zh(stat['likes']) + "　投币: " + self.zh(
             stat['coins']) + "　追番追剧: " + self.zh(stat['favorites'])
         if 'rating' in jo:
@@ -297,7 +384,7 @@ class Spider(Spider):
         vod = {
             "vod_id": id,
             "vod_name": title,
-            "vod_pic": pic,
+            "vod_pic": self.format_img(img),
             "type_name": typeName,
             "vod_year": date,
             "vod_area": "bilidanmu",
@@ -306,22 +393,47 @@ class Spider(Spider):
             "vod_director": score,
             "vod_content": dec
         }
-        ja = jo['episodes']
         playUrl = ''
-        for tmpJo in ja:
-            eid = tmpJo['id']
+        for tmpJo in jo['episodes']:
+            aid = tmpJo['aid']
             cid = tmpJo['cid']
-            part = tmpJo['title'].replace("#", "-")
-            playUrl = playUrl + '{0}${1}_{2}#'.format(part, eid, cid)
+            part = tmpJo['title'].replace("#", "﹟").replace("$", "﹩")
+            if tmpJo['badge'] != '':
+                part += '【' + tmpJo['badge'] + '】'
+            part += tmpJo['long_title'].replace("#", "﹟").replace("$", "﹩")
+            playUrl += '{0}${1}_{2}#'.format(part, aid, cid)
 
-        vod['vod_play_from'] = 'B站'
-        vod['vod_play_url'] = playUrl
+        fromList = []
+        urlList = []
+        if playUrl != '':
+            fromList.append(s_title)
+            urlList.append(playUrl)
+        nList = []
+        if len(jo['seasons']) > 1:
+            n = 0
+            for season in jo['seasons']:
+                season_id = season['season_id']
+                season_title = season['season_title']
+                if season_id == id and len(fromList) > 0:
+                    isHere = fromList.index(s_title)
+                    fromList[isHere] = season_title
+                    continue
+                n += 1
+                nList.append(n)
+                t = threading.Thread(target=self.get_season,
+                                     args=(n, nList, fromList, urlList, season_id, season_title,))
+                t.start()
 
-        result = {
-            'list': [
-                vod
-            ]
-        }
+        while True:
+            _count = threading.active_count()
+            # 计算线程数，不出结果就调大，结果少了就调小
+            if _count <= 2:
+                break
+
+        vod['vod_play_from'] = '$$$'.join(fromList)
+        vod['vod_play_url'] = '$$$'.join(urlList)
+
+        result = {'list': [vod]}
         return result
 
     def searchContent(self, key, quick):
@@ -349,12 +461,12 @@ class Spider(Spider):
         for vod in vodList:
             aid = str(vod['season_id']).strip()
             title = key + '➢' + vod['title'].strip().replace("<em class=\"keyword\">", "").replace("</em>", "")
-            img = vod['cover'].strip()  # vod['eps'][0]['cover'].strip()原来的错误写法
+            img = vod['cover'].strip()
             remark = vod['index_show']
             videos.append({
                 "vod_id": aid,
                 "vod_name": title,
-                "vod_pic": img,
+                "vod_pic": self.format_img(img),
                 "vod_remarks": remark
             })
         result = {
@@ -363,19 +475,21 @@ class Spider(Spider):
         return result
 
     def playerContent(self, flag, id, vipFlags):
-        result = {}
-        ids = id.split("_")
-        header = {
-            "Referer": "https://www.bilibili.com",
-            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36"
-        }
-        url = 'https://api.bilibili.com/pgc/player/web/playurl?qn=116&ep_id={0}&cid={1}'.format(ids[0], ids[1])
         if len(self.cookies) <= 0:
             self.getCookie()
-        rsp = self.fetch(url, cookies=self.cookies, headers=header)
+        result = {}
+        url = ''
+        ids = id.split("_")
+        if len(ids) < 2:
+            return result
+        elif len(ids) >= 2:
+            aid = ids[0]
+            cid = ids[1]
+            url = 'https://api.bilibili.com/pgc/player/web/playurl?aid={0}&cid={1}&qn=116'.format(aid, cid)
+            self.post_history(aid, cid)  # 回传播放历史记录
+        rsp = self.fetch(url, cookies=self.cookies, headers=self.header)
         jRoot = json.loads(rsp.text)
-        if jRoot['message'] != 'success':
-            print("需要大会员权限才能观看")
+        if jRoot['code'] != 0:
             return {}
         jo = jRoot['result']
         ja = jo['durl']
@@ -386,19 +500,16 @@ class Spider(Spider):
             if maxSize < int(tmpJo['size']):
                 maxSize = int(tmpJo['size'])
                 position = i
-
-        url = ''
         if len(ja) > 0:
             if position == -1:
                 position = 0
             url = ja[position]['url']
-
         result["parse"] = 0
         result["playUrl"] = ''
         result["url"] = url
         result["header"] = {
             "Referer": "https://www.bilibili.com",
-            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36"
+            "User-Agent": 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36'
         }
         result["contentType"] = 'video/x-flv'
         return result
@@ -406,126 +517,23 @@ class Spider(Spider):
     config = {
         "player": {},
         "filter": {
-            "全部": [
-                {
-                    "key": "tid",
-                    "name": "分类",
-                    "value": [{
-                        "n": "番剧",
-                        "v": "1"
-                    },
-                        {
-                            "n": "国创",
-                            "v": "4"
-                        },
+            "全部": [{"key": "tid", "name": "分类",
+                    "value": [{"n": "番剧", "v": "1"}, {"n": "国创", "v": "4"}, {"n": "电影", "v": "2"},
+                              {"n": "电视剧", "v": "5"}, {"n": "记录片", "v": "3"}, {"n": "综艺", "v": "7"}]},
+                   {"key": "order", "name": "排序",
+                    "value": [{"n": "播放数量", "v": "2"}, {"n": "更新时间", "v": "0"}, {"n": "最高评分", "v": "4"},
+                              {"n": "弹幕数量", "v": "1"}, {"n": "追看人数", "v": "3"}, {"n": "开播时间", "v": "5"},
+                              {"n": "上映时间", "v": "6"}, ]},
+                   {"key": "season_status", "name": "付费",
+                    "value": [{"n": "全部", "v": "-1"}, {"n": "免费", "v": "1"},
+                              {"n": "付费", "v": "2%2C6"}, {"n": "大会员", "v": "4%2C6"}, ]}, ],
+            "追番追剧": [{"key": "mode", "name": "分类",
+                      "value": [{"n": "追番", "v": "1"}, {"n": "追剧", "v": "2"}, ]}, ],
+            "时间表": [{"key": "tid", "name": "分类",
+                     "value": [{"n": "番剧", "v": "1"}, {"n": "国创", "v": "4"}, ]}, ],
 
-                        {
-                            "n": "电影",
-                            "v": "2"
-                        },
-                        {
-                            "n": "电视剧",
-                            "v": "5"
-                        },
-                        {
-                            "n": "记录片",
-                            "v": "3"
-                        },
-                        {
-                            "n": "综艺",
-                            "v": "7"
-                        }
-
-                    ]
-                },
-                {
-                    "key": "order",
-                    "name": "排序",
-                    "value": [
-
-                        {
-                            "n": "播放数量",
-                            "v": "2"
-                        },
-
-                        {
-                            "n": "更新时间",
-                            "v": "0"
-                        },
-
-                        {
-                            "n": "最高评分",
-                            "v": "4"
-                        },
-                        {
-                            "n": "弹幕数量",
-                            "v": "1"
-                        },
-                        {
-                            "n": "追看人数",
-                            "v": "3"
-                        },
-
-                        {
-                            "n": "开播时间",
-                            "v": "5"
-                        },
-                        {
-                            "n": "上映时间",
-                            "v": "6"
-                        },
-
-                    ]
-                },
-                {
-                    "key": "season_status",
-                    "name": "付费",
-                    "value": [
-                        {
-                            "n": "全部",
-                            "v": "-1"
-                        },
-                        {
-                            "n": "免费",
-                            "v": "1"
-                        },
-
-                        {
-                            "n": "付费",
-                            "v": "2%2C6"
-                        },
-
-                        {
-                            "n": "大会员",
-                            "v": "4%2C6"
-                        },
-
-                    ]
-                },
-            ],
-
-
-            "时间表": [{
-                "key": "tid",
-                "name": "分类",
-                "value": [
-
-                    {
-                        "n": "番剧",
-                        "v": "1"
-                    },
-
-                    {
-                        "n": "国创",
-                        "v": "4"
-                    },
-
-                ]
-            },
-            ],
         }
     }
-
 
     header = {
         "Referer": "https://www.bilibili.com",
