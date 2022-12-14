@@ -1,6 +1,6 @@
 var rule={
     title:'爱粤语网',
-    host:'https://www.iyueyuw.com/',
+    host:'https://www.iyueyuz.com/',
     url:'/index.php/vod/show/id/fyclass/page/fypage.html',  
     searchUrl:'/index.php/vod/search/page/fypage/wd/**.html',
     searchable:2,
