@@ -341,6 +341,62 @@
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/txt/token.txt"
         },
         {
+            "key": "YOKE影视",
+            "name": "🍭 YOKE影视",
+            "type": 3,
+            "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
+            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/js/YOKE影视.js"
+        },
+        {
+            "key": "艾旦影视",
+            "name": "🍭 艾旦影视",
+            "type": 3,
+            "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
+            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/js/艾旦影视.js"
+        },
+        {
+            "key": "艾菲影视",
+            "name": "🍭 艾菲影视",
+            "type": 3,
+            "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
+            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/js/艾菲影视.js"
+        },
+        {
+            "key": "艾斯影院",
+            "name": "🍭 艾斯影院",
+            "type": 3,
+            "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
+            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/js/艾斯影院.js"
+        },
+        {
+            "key": "爱猫影院",
+            "name": "🍭 爱猫影院",
+            "type": 3,
+            "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
+            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/js/爱猫影院.js"
+        },
+        {
+            "key": "八蛋影视",
+            "name": "🍭 八蛋影视",
+            "type": 3,
+            "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
+            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/js/八蛋影视.js"
+        },
+        {
+            "key": "叭度影视",
+            "name": "🍭 叭度影视",
+            "type": 3,
+            "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
+            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/js/叭度影视.js"
+        },
+        {
+            "key": "HDmoli",
+            "name": "🍭 HDmoli",
+            "type": 3,
+            "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
+            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/js/HDmoli.js"
+        },
+        {
             "key": "HDmoli",
             "name": "🍭 HDmoli",
             "type": 3,
