@@ -537,8 +537,8 @@
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/js/cokemv.js"
         },
         {
-            "key": "VOFLIX",
-            "name": "🍭 VOFLIX",
+            "key": "voflix",
+            "name": "🍭 voflix",
             "type": 3,
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/js/voflix.js"
