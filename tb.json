@@ -341,11 +341,11 @@
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/txt/token.txt"
         },
         {
-            "key": "哔嘀影视",
-            "name": "🍭 哔嘀影视",
+            "key": "HDmoli",
+            "name": "🍭 HDmoli",
             "type": 3,
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
-            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/js/哔嘀影视.js"
+            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/js/HDmoli.js"
         },
         {
             "key": "LIBVIO",
@@ -355,11 +355,11 @@
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/js/LIBVIO.js"
         },
         {
-            "key": "爱粤语网",
-            "name": "🍭 爱粤语网",
+            "key": "饭团",
+            "name": "🍭 饭团",
             "type": 3,
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
-            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/js/爱粤语网.js"
+            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/js/饭团.js"
         },
         {
             "key": "追剧达人",
@@ -369,11 +369,11 @@
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/js/追剧达人.js"
         },
         {
-            "key": "1080P",
-            "name": "🍭 1080P",
+            "key": "TF影院",
+            "name": "🍭 TF影院",
             "type": 3,
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
-            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/js/1080P.js"
+            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/js/TF影院.js"
         },
         {
             "key": "趣享星趣",
