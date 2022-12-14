@@ -1,6 +1,6 @@
 {
     "spider": "img+https://hutool.ml/jar",
-    "wallpaper": "http://yc.binghuiyi2.cf/d/壁纸/2.png",
+    "wallpaper": "https://ghproxy.com/https://github.com/yc-forever/PC/raw/main/2.png",
     "sites": [
         {
             "key": "py_douban",
