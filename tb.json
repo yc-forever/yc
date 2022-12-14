@@ -348,18 +348,11 @@
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/js/哔嘀影视.js"
         },
         {
-            "key": "海外看影院",
-            "name": "🍭 海外看影院",
+            "key": "LIBVIO",
+            "name": "🍭 LIBVIO",
             "type": 3,
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
-            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/js/海外看影院.js"
-        },
-        {
-            "key": "乐动影视",
-            "name": "🍭 乐动影视",
-            "type": 3,
-            "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
-            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/js/乐动影视.js"
+            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/js/LIBVIO.js"
         },
         {
             "key": "爱粤语网",
@@ -397,25 +390,11 @@
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/js/看视界.js"
         },
         {
-            "key": "异世界动漫",
-            "name": "🍭 异世界动漫",
-            "type": 3,
-            "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
-            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/js/异世界动漫.js"
-        },
-        {
             "key": "tva云播",
             "name": "🍭 tva云播",
             "type": 3,
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/js/tva云播.js"
-        },
-        {
-            "key": "粤爱看",
-            "name": "🍭 粤爱看",
-            "type": 3,
-            "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
-            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/js/粤爱看.js"
         },
         {
             "key": "回响影视",
@@ -460,46 +439,11 @@
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/js/8号影院.js"
         },
         {
-            "key": "秋霞",
-            "name": "🍭 秋霞",
-            "type": 3,
-            "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
-            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/js/秋霞.js"
-        },
-        {
             "key": "低端影视",
             "name": "🍭 低端影视",
             "type": 3,
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/js/低端影视.js"
-        },
-        {
-            "key": "百忙无果",
-            "name": "🍭 百忙无果",
-            "type": 3,
-            "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
-            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/js/百忙无果.js"
-        },
-        {
-            "key": "优酷",
-            "name": "🍭 优酷",
-            "type": 3,
-            "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
-            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/js/优酷.js"
-        },
-        {
-            "key": "腾云驾雾",
-            "name": "🍭 腾云驾雾",
-            "type": 3,
-            "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
-            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/js/腾云驾雾.js"
-        },
-        {
-            "key": "奇珍异兽",
-            "name": "🍭 奇珍异兽",
-            "type": 3,
-            "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
-            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/js/奇珍异兽.js"
         },
         {
             "key": "七七",
