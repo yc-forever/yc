@@ -341,53 +341,53 @@
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/txt/token.txt"
         },
         {
-            "key": "YOKE影视",
-            "name": "🍭 YOKE影视",
+            "key": "子子影视",
+            "name": "🍭 子子影视",
             "type": 3,
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
-            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/js/YOKE影视.js"
+            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/js/子子影视.js"
         },
         {
-            "key": "艾旦影视",
-            "name": "🍭 艾旦影视",
+            "key": "TVA云播",
+            "name": "🍭 TVA云播",
             "type": 3,
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
-            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/js/艾旦影视.js"
+            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/js/TVA云播.js"
         },
         {
-            "key": "艾菲影视",
-            "name": "🍭 艾菲影视",
+            "key": "新视觉影视",
+            "name": "🍭 新视觉影视",
             "type": 3,
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
-            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/js/艾菲影视.js"
+            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/js/新视觉影视.js"
         },
         {
-            "key": "艾斯影院",
-            "name": "🍭 艾斯影院",
+            "key": "视觉影院",
+            "name": "🍭 视觉影院",
             "type": 3,
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
-            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/js/艾斯影院.js"
+            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/js/视觉影院.js"
         },
         {
-            "key": "爱猫影院",
-            "name": "🍭 爱猫影院",
+            "key": "石榴影院",
+            "name": "🍭 石榴影院",
             "type": 3,
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
-            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/js/爱猫影院.js"
+            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/js/石榴影院.js"
         },
         {
-            "key": "八蛋影视",
-            "name": "🍭 八蛋影视",
+            "key": "两个BT",
+            "name": "🍭 两个BT",
             "type": 3,
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
-            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/js/八蛋影视.js"
+            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/js/两个BT.js"
         },
         {
-            "key": "枫林网",
-            "name": "🍭 枫林网",
+            "key": "花屋影院",
+            "name": "🍭 花屋影院",
             "type": 3,
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
-            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/js/枫林网.js"
+            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/js/花屋影院.js"
         },
         {
             "key": "独播库",
