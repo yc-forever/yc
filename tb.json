@@ -376,13 +376,6 @@
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/两个BT.js"
         },
         {
-            "key": "花屋影院",
-            "name": "🍭 花屋影院",
-            "type": 3,
-            "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
-            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/花屋影院.js"
-        },
-        {
             "key": "独播库",
             "name": "🍭 独播库",
             "type": 3,
