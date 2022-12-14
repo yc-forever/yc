@@ -341,6 +341,20 @@
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/txt/token.txt"
         },
         {
+            "key": "哔嘀影视",
+            "name": "🍭 哔嘀影视",
+            "type": 3,
+            "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
+            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/js/哔嘀影视.js"
+        },
+        {
+            "key": "海外看影院",
+            "name": "🍭 海外看影院",
+            "type": 3,
+            "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
+            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/PC/main/js/海外看影院.js"
+        },
+        {
             "key": "乐动影视",
             "name": "🍭 乐动影视",
             "type": 3,
