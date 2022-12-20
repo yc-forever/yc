@@ -341,6 +341,48 @@
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/txt/token.txt"
         },
         {
+            "key": "乐猪TV",
+            "name": "🍭 乐猪TV",
+            "type": 3,
+            "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
+            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/乐猪TV.js"
+        },
+        {
+            "key": "蓝光影院",
+            "name": "🍭 蓝光影院",
+            "type": 3,
+            "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
+            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/蓝光影院.js"
+        },
+        {
+            "key": "兰花影院",
+            "name": "🍭 兰花影院",
+            "type": 3,
+            "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
+            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/兰花影院.js"
+        },
+        {
+            "key": "布雷蓝光",
+            "name": "🍭 布雷蓝光",
+            "type": 3,
+            "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
+            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/布雷蓝光.js"
+        },
+        {
+            "key": "NY影院",
+            "name": "🍭 NY影院",
+            "type": 3,
+            "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
+            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/NY影院.js"
+        },
+        {
+            "key": "348电影网",
+            "name": "🍭 348电影网",
+            "type": 3,
+            "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
+            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/348电影网.js"
+        },
+        {
             "key": "子子影视",
             "name": "🍭 子子影视",
             "type": 3,
