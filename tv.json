@@ -1,5 +1,5 @@
 {
-    "spider": "https://ghproxy.com/https://github.com/yc-forever/yc/raw/main/custom_spider.jar",
+    "spider": "img+https://hutool.ml/jar",
     "wallpaper": "https://ghproxy.com/https://github.com/yc-forever/yc/raw/main/2.png",
     "sites": [
         {
@@ -385,6 +385,20 @@
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/双十电影.js"
         },
         {
+            "key": "九酷影视",
+            "name": "🍭 九酷影视",
+            "type": 3,
+            "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
+            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/九酷影视.js"
+        },
+        {
+            "key": "AB影院",
+            "name": "🍭 AB影院",
+            "type": 3,
+            "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
+            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/AB影院.js"
+        },
+        {
             "key": "8号影院",
             "name": "🍭 8号影院",
             "type": 3,
@@ -467,20 +481,6 @@
             "type": 3,
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/TF影院.js"
-        },
-        {
-            "key": "看视界",
-            "name": "🍭 看视界",
-            "type": 3,
-            "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
-            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/看视界.js"
-        },
-        {
-            "key": "tva云播",
-            "name": "🍭 tva云播",
-            "type": 3,
-            "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
-            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/tva云播.js"
         },
         {
             "key": "真不卡",
