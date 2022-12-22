@@ -321,6 +321,16 @@
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/txt/token.txt"
         },
         {
+            "key": "YiSo",
+            "name": "🍦 易搜",
+            "type": "3",
+            "api": "csp_YiSo",
+            "searchable": "1",
+            "quickSearch": "1",
+            "filterable": "1",
+            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/txt/token.txt"
+        },
+        {
             "key": "Upso",
             "name": "🍦 云搜",
             "type": "3",
