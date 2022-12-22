@@ -114,16 +114,6 @@
             "ext": "b88de1329655cca1beba45aa9776de70"
         },
         {
-            "key": "Zxzj",
-            "name": "🍦 在线",
-            "type": "3",
-            "api": "csp_Dora",
-            "searchable": "1",
-            "quickSearch": "1",
-            "filterable": "1",
-            "ext": "23a412dda32885ae2bcb97b956cd7ad4"
-        },
-        {
             "key": "Lgyy",
             "name": "🍦 蓝光",
             "type": "3",
@@ -365,13 +355,6 @@
             "type": 3,
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/cokemv.js"
-        },
-        {
-            "key": "在线之家",
-            "name": "🍭 在线之家",
-            "type": 3,
-            "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
-            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/在线之家.js"
         },
         {
             "key": "voflix",
