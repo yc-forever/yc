@@ -1,5 +1,5 @@
 {
-    "spider": "img+https://hutool.ml/jar",
+    "spider": "https://ghproxy.com/https://github.com/yc-forever/yc/raw/main/custom_spider.jar",
     "wallpaper": "https://ghproxy.com/https://github.com/yc-forever/yc/raw/main/2.png",
     "sites": [
         {
