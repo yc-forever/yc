@@ -10,5 +10,5 @@ var rule={
     二级:{"title":".text-fff&&Text;.myui-player__data p&&Text","img":".lazyload&&data-original","desc":".myui-player__data p&&Text;;;.text-collapse p:eq(1)&&Text;.text-collapse p:eq(0)&&Text","content":".data&&Text","tabs":".nav-tabs:eq(0) li","lists":".myui-content__list:eq(#id) li"},
     // searchUrl:'/vod_search/-------------.html?wd=**',
     searchUrl: '/vod_____search/**----------fypage---.html',
-    搜索:'#searchList li;a&&title;.lazyload&&data-original;.text-right&&Text;a&&href',
+    搜索:'searchList li;a&&title;.lazyload&&data-original;.text-right&&Text;a&&href',
 }
