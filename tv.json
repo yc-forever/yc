@@ -58,8 +58,8 @@
             "name": "📻 听书网",
             "type": "3",
             "api": "csp_Dora",
-            "searchable": "1",
-            "quickSearch": "1",
+            "searchable": "0",
+            "quickSearch": "0",
             "filterable": "1",
             "ext": "d16d1517e9eaad9909cb35c55ba0b784"
         },
