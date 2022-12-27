@@ -497,6 +497,13 @@
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/莫扎兔.js"
         },
         {
+            "key": "荐片",
+            "name": "🍭 荐片",
+            "type": 3,
+            "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
+            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/荐片.js"
+        },
+        {
             "key": "鸭奈飞",
             "name": "🍭 鸭奈飞",
             "type": 3,
