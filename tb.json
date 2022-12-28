@@ -540,13 +540,6 @@
             "name": "live",
             "type": 0,
             "url": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/lives/live.txt",
-            "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
-            "logo": "https://epg.112114.xyz/logo/{name}.png"
-        },
-        {
-            "name": "測試",
-            "type": 1,
-            "url": "https://ghproxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/json/live.json",
             "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={epg}&date={date}",
             "logo": "http://epg.51zmt.top:8000/{logo}"
         },
@@ -554,29 +547,29 @@
             "name": "live2",
             "type": 0,
             "url": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/lives/live2.txt",
-            "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
-            "logo": "https://epg.112114.xyz/logo/{name}.png"
+            "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={epg}&date={date}",
+            "logo": "http://epg.51zmt.top:8000/{logo}"
         },
         {
             "name": "live3",
             "type": 0,
             "url": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/lives/live3.txt",
-            "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
-            "logo": "https://epg.112114.xyz/logo/{name}.png"
+            "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={epg}&date={date}",
+            "logo": "http://epg.51zmt.top:8000/{logo}"
         },
         {
             "name": "live4",
             "type": 0,
             "url": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/lives/live4.txt",
-            "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
-            "logo": "https://epg.112114.xyz/logo/{name}.png"
+            "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={epg}&date={date}",
+            "logo": "http://epg.51zmt.top:8000/{logo}"
         },
         {
             "name": "live5",
             "type": 0,
             "url": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/lives/live5.txt",
-            "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
-            "logo": "https://epg.112114.xyz/logo/{name}.png"
+            "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={epg}&date={date}",
+            "logo": "http://epg.51zmt.top:8000/{logo}"
         },
         {
             "name": "fl",
