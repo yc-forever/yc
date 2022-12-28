@@ -540,31 +540,36 @@
             "name": "live",
             "type": 0,
             "url": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/lives/live.txt",
-            "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}"
+            "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
+            "logo": "https://epg.112114.xyz/logo/{name}.png"
         },
         {
             "name": "live2",
             "type": 0,
             "url": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/lives/live2.txt",
-            "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}"
+            "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
+            "logo": "https://epg.112114.xyz/logo/{name}.png"
         },
         {
             "name": "live3",
             "type": 0,
             "url": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/lives/live3.txt",
-            "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}"
+            "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
+            "logo": "https://epg.112114.xyz/logo/{name}.png"
         },
         {
             "name": "live4",
             "type": 0,
             "url": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/lives/live4.txt",
-            "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}"
+            "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
+            "logo": "https://epg.112114.xyz/logo/{name}.png"
         },
         {
             "name": "live5",
             "type": 0,
             "url": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/lives/live5.txt",
-            "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}"
+            "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
+            "logo": "https://epg.112114.xyz/logo/{name}.png"
         },
         {
             "name": "fl",
@@ -579,7 +584,7 @@
             "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}"
         },
         {
-            "name": "宝盒",
+            "name": "bh",
             "type": 0,
             "url": "https://raw.fastgit.org/vamoschuck/TV/main/M3U",
             "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
