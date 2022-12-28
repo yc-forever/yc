@@ -5,19 +5,8 @@
             "server": "http://yc.binghuiyi2.cf"
         },
         {
-            "name": "丫仙女",
-            "server": "http://alist.xiaoya.pro/",
-            "startPage": "/",
-            "showAll": false,
-            "search": true,
-            "params": {
-                "/abc": {
-                    "password": "123"
-                },
-                "/abc/abc": {
-                    "password": "123"
-                }
-            }
+            "name": "小雅",
+            "server": "http://alist.xiaoya.pro"
         },
         {
             "name": "小兵",
