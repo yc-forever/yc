@@ -483,6 +483,13 @@
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/TF影院.js"
         },
         {
+            "key": "农民影视",
+            "name": "🍭 农民影视",
+            "type": 3,
+            "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
+            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/农民影视.js"
+        },
+        {
             "key": "真不卡",
             "name": "🍭 真不卡",
             "type": 3,
