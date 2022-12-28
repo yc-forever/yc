@@ -23,6 +23,16 @@
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/txt/alist.json"
         },
         {
+            "key": "Alist",
+            "name": "❤ Alist",
+            "type": 3,
+            "api": "http://101.34.67.237/libs/alist.min.js",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 0,
+            "ext": "http://101.34.67.237/txt/json/alist.json"
+        },
+        {
             "key": "Bili",
             "name": "🎤 B站",
             "type": "3",
@@ -540,34 +550,39 @@
             "name": "live",
             "type": 0,
             "url": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/lives/live.txt",
-            "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}"
+            "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={epg}&date={date}",
+            "logo": "http://epg.51zmt.top:8000/{logo}"
         },
         {
             "name": "live2",
             "type": 0,
             "url": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/lives/live2.txt",
-            "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}"
+            "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={epg}&date={date}",
+            "logo": "http://epg.51zmt.top:8000/{logo}"
         },
         {
             "name": "live3",
             "type": 0,
             "url": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/lives/live3.txt",
-            "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}"
+            "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={epg}&date={date}",
+            "logo": "http://epg.51zmt.top:8000/{logo}"
         },
         {
             "name": "live4",
             "type": 0,
             "url": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/lives/live4.txt",
-            "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}"
+            "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={epg}&date={date}",
+            "logo": "http://epg.51zmt.top:8000/{logo}"
         },
         {
             "name": "live5",
             "type": 0,
             "url": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/lives/live5.txt",
-            "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}"
+            "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={epg}&date={date}",
+            "logo": "http://epg.51zmt.top:8000/{logo}"
         },
         {
-            "name": "宝盒",
+            "name": "bh",
             "type": 0,
             "url": "https://raw.fastgit.org/vamoschuck/TV/main/M3U",
             "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
