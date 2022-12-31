@@ -549,13 +549,13 @@
         {
             "name": "live",
             "type": 1,
-            "url": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/lives/live.txt",
+            "url": "https://ghproxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/json/live.json",
             "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={epg}&date={date}",
             "logo": "http://epg.51zmt.top:8000/{logo}"
         },
         {
             "name": "live2",
-            "type": 1,
+            "type": 0,
             "url": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/lives/live2.txt",
             "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={epg}&date={date}",
             "logo": "http://epg.51zmt.top:8000/{logo}"
