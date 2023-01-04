@@ -64,6 +64,20 @@
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/py/py_douyu.py"
         },
         {
+            "key": "虎牙直播",
+            "name": "🍭 虎牙",
+            "type": 3,
+            "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
+            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/虎牙直播.js"
+        },
+        {
+            "key": "种子音乐",
+            "name": "🍭 音乐",
+            "type": 3,
+            "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
+            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/种子音乐.js"
+        },
+        {
             "key": "Tbook",
             "name": "📻 听书网",
             "type": "3",
