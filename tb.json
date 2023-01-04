@@ -34,7 +34,7 @@
         },
         {
             "key": "Bili",
-            "name": "🎤 B站",
+            "name": "🎞 B站",
             "type": "3",
             "api": "csp_Bili",
             "searchable": "0",
@@ -44,35 +44,22 @@
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/txt/bili.json"
         },
         {
-            "key": "py_huya",
-            "name": "🐯 虎牙",
-            "type": 3,
-            "api": "py_huya",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/py/py_huya.py"
-        },
-        {
-            "key": "py_douyu",
-            "name": "🐠 斗鱼",
-            "type": 3,
-            "api": "py_douyu",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/py/py_douyu.py"
-        },
-        {
             "key": "虎牙直播",
-            "name": "🍭 虎牙",
+            "name": "🐯 虎牙",
             "type": 3,
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/虎牙直播.js"
         },
         {
+            "key": "斗鱼直播",
+            "name": "🐠 斗鱼",
+            "type": 3,
+            "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
+            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/斗鱼直播.js"
+        },
+        {
             "key": "种子音乐",
-            "name": "🍭 音乐",
+            "name": "🎤 音乐",
             "type": 3,
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/种子音乐.js"
