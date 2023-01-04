@@ -330,6 +330,9 @@
             "key": "菜狗",
             "name": "🍭 菜狗",
             "type": 3,
+            "searchable": "1",
+            "quickSearch": "1",
+            "filterable": "1",
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/菜狗.js"
         },
@@ -344,6 +347,9 @@
             "key": "厂长",
             "name": "🍭 厂长",
             "type": 3,
+            "searchable": "1",
+            "quickSearch": "1",
+            "filterable": "1",
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/厂长.js"
         },
@@ -351,6 +357,9 @@
             "key": "爱看影视",
             "name": "🍭 爱看影视",
             "type": 3,
+            "searchable": "1",
+            "quickSearch": "1",
+            "filterable": "1",
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/爱看影视.js"
         },
@@ -365,6 +374,9 @@
             "key": "LIBVIO",
             "name": "🍭 LIBVIO",
             "type": 3,
+            "searchable": "1",
+            "quickSearch": "1",
+            "filterable": "1",
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/LIBVIO.js"
         },
@@ -379,6 +391,9 @@
             "key": "cokemv",
             "name": "🍭 可乐",
             "type": 3,
+            "searchable": "1",
+            "quickSearch": "1",
+            "filterable": "1",
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/cokemv.js"
         },
@@ -393,6 +408,9 @@
             "key": "乐猪TV",
             "name": "🍭 乐猪TV",
             "type": 3,
+            "searchable": "1",
+            "quickSearch": "1",
+            "filterable": "1",
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/乐猪TV.js"
         },
@@ -400,6 +418,9 @@
             "key": "回响影视",
             "name": "🍭 回响影视",
             "type": 3,
+            "searchable": "1",
+            "quickSearch": "1",
+            "filterable": "1",
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/回响影视.js"
         },
@@ -407,6 +428,9 @@
             "key": "双十电影",
             "name": "🍭 双十电影",
             "type": 3,
+            "searchable": "1",
+            "quickSearch": "1",
+            "filterable": "1",
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/双十电影.js"
         },
@@ -418,9 +442,32 @@
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/九酷影视.js"
         },
         {
+            "key": "哔滴影视",
+            "name": "🍭 哔滴影视",
+            "type": 3,
+            "searchable": "1",
+            "quickSearch": "1",
+            "filterable": "1",
+            "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
+            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/哔滴影视.js"
+        },
+        {
+            "key": "低端影视",
+            "name": "🍭 低端影视",
+            "type": 3,
+            "searchable": "1",
+            "quickSearch": "1",
+            "filterable": "1",
+            "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
+            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/低端影视.js"
+        },
+        {
             "key": "AB影院",
             "name": "🍭 AB影院",
             "type": 3,
+            "searchable": "1",
+            "quickSearch": "1",
+            "filterable": "1",
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/AB影院.js"
         },
@@ -435,6 +482,9 @@
             "key": "蓝光影院",
             "name": "🍭 蓝光影院",
             "type": 3,
+            "searchable": "1",
+            "quickSearch": "1",
+            "filterable": "1",
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/蓝光影院.js"
         },
@@ -442,6 +492,9 @@
             "key": "兰花影院",
             "name": "🍭 兰花影院",
             "type": 3,
+            "searchable": "1",
+            "quickSearch": "1",
+            "filterable": "1",
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/兰花影院.js"
         },
@@ -456,6 +509,9 @@
             "key": "TVA云播",
             "name": "🍭 TVA云播",
             "type": 3,
+            "searchable": "1",
+            "quickSearch": "1",
+            "filterable": "1",
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/TVA云播.js"
         },
@@ -463,6 +519,9 @@
             "key": "新视觉影视",
             "name": "🍭 新视觉影视",
             "type": 3,
+            "searchable": "1",
+            "quickSearch": "1",
+            "filterable": "1",
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/新视觉影视.js"
         },
@@ -470,6 +529,9 @@
             "key": "视觉影院",
             "name": "🍭 视觉影院",
             "type": 3,
+            "searchable": "1",
+            "quickSearch": "1",
+            "filterable": "1",
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/视觉影院.js"
         },
@@ -477,6 +539,9 @@
             "key": "两个BT",
             "name": "🍭 两个BT",
             "type": 3,
+            "searchable": "1",
+            "quickSearch": "1",
+            "filterable": "1",
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/两个BT.js"
         },
@@ -484,6 +549,9 @@
             "key": "独播库",
             "name": "🍭 独播库",
             "type": 3,
+            "searchable": "1",
+            "quickSearch": "1",
+            "filterable": "1",
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/独播库.js"
         },
@@ -491,6 +559,9 @@
             "key": "饭团",
             "name": "🍭 饭团",
             "type": 3,
+            "searchable": "1",
+            "quickSearch": "1",
+            "filterable": "1",
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/饭团.js"
         },
@@ -498,6 +569,9 @@
             "key": "追剧达人",
             "name": "🍭 追剧达人",
             "type": 3,
+            "searchable": "1",
+            "quickSearch": "1",
+            "filterable": "1",
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/追剧达人.js"
         },
@@ -512,6 +586,9 @@
             "key": "农民影视",
             "name": "🍭 农民影视",
             "type": 3,
+            "searchable": "1",
+            "quickSearch": "1",
+            "filterable": "1",
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/农民影视.js"
         },
@@ -519,6 +596,9 @@
             "key": "真不卡",
             "name": "🍭 真不卡",
             "type": 3,
+            "searchable": "1",
+            "quickSearch": "1",
+            "filterable": "1",
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/真不卡.js"
         },
@@ -533,6 +613,9 @@
             "key": "荐片",
             "name": "🍭 荐片",
             "type": 3,
+            "searchable": "1",
+            "quickSearch": "1",
+            "filterable": "1",
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/荐片.js"
         },
@@ -540,6 +623,9 @@
             "key": "鸭奈飞",
             "name": "🍭 鸭奈飞",
             "type": 3,
+            "searchable": "1",
+            "quickSearch": "1",
+            "filterable": "1",
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/鸭奈飞.js"
         },
@@ -547,6 +633,9 @@
             "key": "360影视",
             "name": "🍭 360影视",
             "type": 3,
+            "searchable": "1",
+            "quickSearch": "1",
+            "filterable": "1",
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/360影视.js"
         },
