@@ -47,6 +47,8 @@
             "key": "虎牙直播",
             "name": "🐯 虎牙",
             "type": 3,
+            "searchable": "0",
+            "quickSearch": "0",
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/虎牙直播.js"
         },
@@ -54,6 +56,8 @@
             "key": "斗鱼直播",
             "name": "🐠 斗鱼",
             "type": 3,
+            "searchable": "0",
+            "quickSearch": "0",
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/斗鱼直播.js"
         },
