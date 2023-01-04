@@ -3,14 +3,14 @@
     "wallpaper": "https://ghproxy.com/https://github.com/yc-forever/yc/raw/main/2.png",
     "sites": [
         {
-            "key": "py_douban",
+            "key": "drpy",
             "name": "📡 首页",
             "type": 3,
-            "api": "py_douban",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/py/py_douban.py"
+            "searchable": "1",
+            "quickSearch": "1",
+            "filterable": "1",
+            "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
+            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/drpy.js"
         },
         {
             "key": "AList",
@@ -18,18 +18,19 @@
             "type": "3",
             "api": "csp_AList",
             "searchable": "1",
-            "filterable": 1,
-            "jar": "https://ghproxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/jar/custom_spider.jar",
-            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/txt/alist.json"
+            "quickSearch": "1",
+            "filterable": "1",
+            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/txt/alist.json",
+            "jar": "https://ghproxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/jar/custom_spider.jar"
         },
         {
             "key": "Alist",
             "name": "❤ 小雅",
             "type": 3,
             "api": "http://101.34.67.237/libs/alist.min.js",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 0,
+            "searchable": "1",
+            "quickSearch": "1",
+            "filterable": "1",
             "ext": "http://101.34.67.237/txt/json/alist.json"
         },
         {
@@ -40,8 +41,8 @@
             "searchable": "0",
             "quickSearch": "0",
             "filterable": "1",
-            "jar": "https://ghproxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/jar/custom_spider.jar",
-            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/txt/bili.json"
+            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/txt/bili.json",
+            "jar": "https://ghproxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/jar/custom_spider.jar"
         },
         {
             "key": "虎牙直播",
@@ -49,6 +50,7 @@
             "type": 3,
             "searchable": "0",
             "quickSearch": "0",
+            "filterable": "1",
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/虎牙直播.js"
         },
@@ -58,6 +60,7 @@
             "type": 3,
             "searchable": "0",
             "quickSearch": "0",
+            "filterable": "1",
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/斗鱼直播.js"
         },
@@ -65,6 +68,9 @@
             "key": "种子音乐",
             "name": "🎤 音乐",
             "type": 3,
+            "searchable": "1",
+            "quickSearch": "1",
+            "filterable": "1",
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/种子音乐.js"
         },
@@ -273,7 +279,8 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "http://ali.饭太硬.ml/tok"
+            "ext": "http://ali.饭太硬.ml/tok",
+            "jar": "https://ghproxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/jar/custom_spider.jar"
         },
         {
             "key": "AliPS",
@@ -283,7 +290,8 @@
             "searchable": "1",
             "quickSearch": "1",
             "filterable": "1",
-            "ext": "http://ali.饭太硬.ml/tok"
+            "ext": "http://ali.饭太硬.ml/tok",
+            "jar": "https://ghproxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/jar/custom_spider.jar"
         },
         {
             "key": "YiSo",
@@ -293,17 +301,19 @@
             "searchable": "1",
             "quickSearch": "1",
             "filterable": "1",
-            "ext": "http://ali.饭太硬.ml/tok"
+            "ext": "http://ali.饭太硬.ml/tok",
+            "jar": "https://ghproxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/jar/custom_spider.jar"
         },
         {
             "key": "Upso",
             "name": "🍦 云搜",
             "type": "3",
-            "api": "csp_Upso",
+            "api": "csp_UpYun",
             "searchable": "1",
             "quickSearch": "1",
             "filterable": "1",
-            "ext": "http://ali.饭太硬.ml/tok"
+            "ext": "http://ali.饭太硬.ml/tok",
+            "jar": "https://ghproxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/jar/custom_spider.jar"
         },
         {
             "key": "Zhaozy",
@@ -313,7 +323,8 @@
             "searchable": "1",
             "quickSearch": "1",
             "filterable": "1",
-            "ext": "http://ali.饭太硬.ml/tok"
+            "ext": "http://ali.饭太硬.ml/tok",
+            "jar": "https://ghproxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/jar/custom_spider.jar"
         },
         {
             "key": "菜狗",
@@ -543,11 +554,12 @@
             "key": "push_agent",
             "name": "⚡ 推送",
             "type": "3",
-            "api": "csp_PushAgent",
+            "api": "csp_Push",
             "searchable": "1",
             "quickSearch": "1",
-            "filterable": "1",
-            "ext": "http://ali.饭太硬.ml/tok"
+            "filterable": "0",
+            "ext": "http://ali.饭太硬.ml/tok",
+            "jar": "https://ghproxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/jar/custom_spider.jar"
         }
     ],
     "lives": [
