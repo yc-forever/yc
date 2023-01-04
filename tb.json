@@ -272,10 +272,10 @@
             "jar": "https://ghproxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/jar/custom_spider.jar"
         },
         {
-            "key": "Gitcafe",
+            "key": "纸条",
             "name": "🍦 纸条",
             "type": 3,
-            "api": "csp_Gitcafe",
+            "api": "csp_Paper",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
