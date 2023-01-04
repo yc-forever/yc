@@ -250,6 +250,7 @@
             "type": 3,
             "api": "csp_Ying",
             "searchable": 1,
+            "quickSearch": 1,
             "filterable": 1,
             "jar": "https://ghproxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/jar/custom_spider.jar"
         },
@@ -259,6 +260,7 @@
             "type": 3,
             "api": "csp_Dm84",
             "searchable": 1,
+            "quickSearch": 1,
             "filterable": 1,
             "jar": "https://ghproxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/jar/custom_spider.jar"
         },
@@ -268,6 +270,7 @@
             "type": 3,
             "api": "csp_Ysj",
             "searchable": 1,
+            "quickSearch": 1,
             "filterable": 1,
             "jar": "https://ghproxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/jar/custom_spider.jar"
         },
@@ -289,7 +292,7 @@
             "api": "csp_AliPS",
             "searchable": "1",
             "quickSearch": "1",
-            "filterable": "1",
+            "filterable": "0",
             "ext": "http://ali.饭太硬.ml/tok",
             "jar": "https://ghproxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/jar/custom_spider.jar"
         },
@@ -300,7 +303,7 @@
             "api": "csp_YiSo",
             "searchable": "1",
             "quickSearch": "1",
-            "filterable": "1",
+            "filterable": "0",
             "ext": "http://ali.饭太硬.ml/tok",
             "jar": "https://ghproxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/jar/custom_spider.jar"
         },
@@ -311,7 +314,7 @@
             "api": "csp_UpYun",
             "searchable": "1",
             "quickSearch": "1",
-            "filterable": "1",
+            "filterable": "0",
             "ext": "http://ali.饭太硬.ml/tok",
             "jar": "https://ghproxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/jar/custom_spider.jar"
         },
@@ -322,7 +325,7 @@
             "api": "csp_Zhaozy",
             "searchable": "1",
             "quickSearch": "1",
-            "filterable": "1",
+            "filterable": "0",
             "ext": "http://ali.饭太硬.ml/tok",
             "jar": "https://ghproxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/jar/custom_spider.jar"
         },
@@ -340,6 +343,9 @@
             "key": "七七",
             "name": "🍭 七七",
             "type": 3,
+            "searchable": "1",
+            "quickSearch": "1",
+            "filterable": "1",
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/七七.js"
         },
@@ -367,6 +373,9 @@
             "key": "布雷蓝光",
             "name": "🍭 布雷蓝光",
             "type": 3,
+            "searchable": "1",
+            "quickSearch": "1",
+            "filterable": "1",
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/布雷蓝光.js"
         },
@@ -384,6 +393,9 @@
             "key": "555影视",
             "name": "🍭 555影视",
             "type": 3,
+            "searchable": "1",
+            "quickSearch": "1",
+            "filterable": "1",
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/555影视.js"
         },
@@ -401,6 +413,9 @@
             "key": "voflix",
             "name": "🍭 voflix",
             "type": 3,
+            "searchable": "1",
+            "quickSearch": "1",
+            "filterable": "1",
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/voflix.js"
         },
@@ -438,18 +453,11 @@
             "key": "九酷影视",
             "name": "🍭 九酷影视",
             "type": 3,
-            "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
-            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/九酷影视.js"
-        },
-        {
-            "key": "哔滴影视",
-            "name": "🍭 哔滴影视",
-            "type": 3,
             "searchable": "1",
             "quickSearch": "1",
             "filterable": "1",
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
-            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/哔滴影视.js"
+            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/九酷影视.js"
         },
         {
             "key": "低端影视",
@@ -475,6 +483,9 @@
             "key": "8号影院",
             "name": "🍭 8号影院",
             "type": 3,
+            "searchable": "1",
+            "quickSearch": "1",
+            "filterable": "1",
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/8号影院.js"
         },
@@ -502,6 +513,9 @@
             "key": "348电影网",
             "name": "🍭 348电影网",
             "type": 3,
+            "searchable": "1",
+            "quickSearch": "1",
+            "filterable": "1",
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/348电影网.js"
         },
@@ -579,6 +593,9 @@
             "key": "TF影院",
             "name": "🍭 TF影院",
             "type": 3,
+            "searchable": "1",
+            "quickSearch": "1",
+            "filterable": "1",
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/TF影院.js"
         },
@@ -606,6 +623,9 @@
             "key": "莫扎兔",
             "name": "🍭 莫扎兔",
             "type": 3,
+            "searchable": "1",
+            "quickSearch": "1",
+            "filterable": "1",
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/莫扎兔.js"
         },
