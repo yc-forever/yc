@@ -688,22 +688,6 @@
             "logo": "http://epg.51zmt.top:8000/{logo}"
         },
         {
-            "name": "肥羊源4K/8K",
-            "type": 0,
-            "url": "https://ghproxy.com/https://raw.githubusercontent.com/youshandefeiyang/IPTV/main/main/IPTV.m3u",
-            "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
-            "logo": "https://epg.112114.xyz/logo/{name}.png",
-            "ua": "okhttp/3.15"
-        },
-        {
-            "name": "肥羊源足球",
-            "type": 0,
-            "url": "https://football.v1.mk",
-            "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
-            "logo": "https://epg.112114.xyz/logo/{name}.png",
-            "ua": "okhttp/3.15"
-        },
-        {
             "name": "fl",
             "type": 0,
             "url": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/lives/fl.txt",
@@ -714,13 +698,6 @@
             "type": 0,
             "url": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/lives/fl2.txt",
             "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}"
-        },
-        {
-            "name": "bh",
-            "type": 0,
-            "url": "https://raw.fastgit.org/vamoschuck/TV/main/M3U",
-            "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
-            "ua": ""
         }
     ],
     "parses": [
