@@ -673,7 +673,7 @@
     ],
     "lives": [
         {
-            "name": "live",
+            "name": "肥羊源",
             "type": 0,
             "url": "https://ghproxy.com/https://raw.githubusercontent.com/youshandefeiyang/IPTV/main/main/bestv.m3u",
             "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
@@ -681,32 +681,27 @@
             "ua": "okhttp/3.15"
         },
         {
-            "name": "live2",
+            "name": "蜂蜜源",
             "type": 0,
             "url": "https://ghproxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/json/live.json",
             "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={epg}&date={date}",
             "logo": "http://epg.51zmt.top:8000/{logo}"
         },
         {
-            "name": "live3",
+            "name": "肥羊源4K/8K",
             "type": 0,
-            "url": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/lives/live3.txt",
-            "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={epg}&date={date}",
-            "logo": "http://epg.51zmt.top:8000/{logo}"
+            "url": "https://ghproxy.com/https://raw.githubusercontent.com/youshandefeiyang/IPTV/main/main/IPTV.m3u",
+            "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
+            "logo": "https://epg.112114.xyz/logo/{name}.png",
+            "ua": "okhttp/3.15"
         },
         {
-            "name": "live4",
+            "name": "肥羊源足球",
             "type": 0,
-            "url": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/lives/live4.txt",
-            "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={epg}&date={date}",
-            "logo": "http://epg.51zmt.top:8000/{logo}"
-        },
-        {
-            "name": "live5",
-            "type": 0,
-            "url": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/lives/live5.txt",
-            "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={epg}&date={date}",
-            "logo": "http://epg.51zmt.top:8000/{logo}"
+            "url": "https://football.v1.mk",
+            "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
+            "logo": "https://epg.112114.xyz/logo/{name}.png",
+            "ua": "okhttp/3.15"
         },
         {
             "name": "fl",
