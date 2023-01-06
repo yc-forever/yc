@@ -1,6 +1,6 @@
 var rule={
     title:'厂长资源',
-    host:'https://czzzu.com/',
+    host:'https: //czzzu.com/',
     url:'/fyclass/page/fypage',
     searchUrl:'/xssearch?q=**&f=_all&p=fypage',
     searchable: 2,
