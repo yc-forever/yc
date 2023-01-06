@@ -360,14 +360,14 @@
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/厂长.js"
         },
         {
-            "key": "爱看影视",
-            "name": "🍭 爱看影视",
+            "key": "爱看",
+            "name": "🍭 爱看",
             "type": 3,
             "searchable": "1",
             "quickSearch": "1",
             "filterable": "1",
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
-            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/爱看影视.js"
+            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/爱看.js"
         },
         {
             "key": "布雷蓝光",
