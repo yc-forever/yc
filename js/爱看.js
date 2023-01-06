@@ -26,5 +26,5 @@ var rule={
     一级:'.myui-vodlist__box;a&&title;.lazyload&&data-original;.pic-text&&Text;a&&href',
     // 二级:{"title":"h1&&Text;.myui-content__detail p:eq(1)&&Text","img":".lazyload&&data-original","desc":";;;.myui-content__detail p:eq(3)&&Text;.myui-content__detail p:eq(4)&&Text","content":".sketch.content&&Text","tabs":'.nav.nav-tabs.active',"lists":".myui-content__list:eq(#id) a"},
     二级:{"title":"h1&&Text;.myui-content__detail p:eq(1)&&Text","img":".lazyload&&data-original","desc":";;;.myui-content__detail p:eq(3)&&Text;.myui-content__detail p:eq(4)&&Text","content":".sketch.content&&Text","tabs":'.bottom-line:eq(0) .nav li',"lists":".myui-content__list:eq(#id) a"},
-    搜索:'.myui-vodlist__media.clearfix li;a&&title;.lazyload&&data-original;.text-right&&Text;a&&href',
+    搜索:'.myui-panel_bd.col-pd li;a&&title;.lazyload&&data-original;.text-right&&Text;a&&href',
 }
