@@ -460,16 +460,6 @@
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/低端影视.js"
         },
         {
-            "key": "AB影院",
-            "name": "🍭 AB影院",
-            "type": 3,
-            "searchable": "1",
-            "quickSearch": "1",
-            "filterable": "1",
-            "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
-            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/AB影院.js"
-        },
-        {
             "key": "8号影院",
             "name": "🍭 8号影院",
             "type": 3,
@@ -530,6 +520,16 @@
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/饭团.js"
         },
         {
+            "key": "叭度影视",
+            "name": "🍭 叭度影视",
+            "type": 3,
+            "searchable": "1",
+            "quickSearch": "1",
+            "filterable": "1",
+            "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
+            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/叭度影视.js"
+        },
+        {
             "key": "TVA云播",
             "name": "🍭 TVA云播",
             "type": 3,
@@ -568,26 +568,6 @@
             "filterable": "1",
             "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/独播库.js"
-        },
-        {
-            "key": "TF影院",
-            "name": "🍭 TF影院",
-            "type": 3,
-            "searchable": "1",
-            "quickSearch": "1",
-            "filterable": "1",
-            "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
-            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/TF影院.js"
-        },
-        {
-            "key": "真不卡",
-            "name": "🍭 真不卡",
-            "type": 3,
-            "searchable": "1",
-            "quickSearch": "1",
-            "filterable": "1",
-            "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
-            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/真不卡.js"
         },
         {
             "key": "莫扎兔",
