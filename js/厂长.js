@@ -2,7 +2,7 @@ var rule={
     title:'厂长资源',
     host:'https://czzzu.com',
     url:'/fyclass/page/fypage',
-    searchUrl:'/?s=**',
+    searchUrl:'/xssearch?s=**&f=_all&p=fypage',
     searchable:2,
     filterable:0,
     headers:{'User-Agent':'PC_UA', },
