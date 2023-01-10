@@ -20,8 +20,7 @@
             "searchable": "1",
             "quickSearch": "1",
             "filterable": "1",
-            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/txt/alist.json",
-            "jar": "https://ghproxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/jar/custom_spider.jar"
+            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/txt/alist.json"
         },
         {
             "key": "Alist",
@@ -235,45 +234,14 @@
             "ext": "9248c57eb22ace4a3431fbd1a979465f"
         },
         {
-            "key": "櫻花",
-            "name": "🍦 櫻花",
-            "type": 3,
-            "api": "csp_Ying",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "jar": "https://ghproxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/jar/custom_spider.jar"
-        },
-        {
-            "key": "巴士",
-            "name": "🍦 巴士",
-            "type": 3,
-            "api": "csp_Dm84",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "jar": "https://ghproxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/jar/custom_spider.jar"
-        },
-        {
-            "key": "異界",
-            "name": "🍦 異界",
-            "type": 3,
-            "api": "csp_Ysj",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "jar": "https://ghproxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/jar/custom_spider.jar"
-        },
-        {
             "key": "纸条",
             "name": "🍦 纸条",
             "type": 3,
-            "api": "csp_Paper",
+            "api": "csp_Gitcafe",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "http://ali.饭太硬.ml/tok",
-            "jar": "https://ghproxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/jar/custom_spider.jar"
+            "ext": "http://ali.饭太硬.ml/tok"
         },
         {
             "key": "AliPS",
@@ -283,8 +251,7 @@
             "searchable": "1",
             "quickSearch": "1",
             "filterable": "0",
-            "ext": "http://ali.饭太硬.ml/tok",
-            "jar": "https://ghproxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/jar/custom_spider.jar"
+            "ext": "http://ali.饭太硬.ml/tok"
         },
         {
             "key": "YiSo",
@@ -294,19 +261,17 @@
             "searchable": "1",
             "quickSearch": "1",
             "filterable": "0",
-            "ext": "http://ali.饭太硬.ml/tok",
-            "jar": "https://ghproxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/jar/custom_spider.jar"
+            "ext": "http://ali.饭太硬.ml/tok"
         },
         {
             "key": "Upso",
             "name": "🍦 云搜",
             "type": "3",
-            "api": "csp_UpYun",
+            "api": "csp_Upso",
             "searchable": "1",
             "quickSearch": "1",
             "filterable": "0",
-            "ext": "http://ali.饭太硬.ml/tok",
-            "jar": "https://ghproxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/jar/custom_spider.jar"
+            "ext": "http://ali.饭太硬.ml/tok"
         },
         {
             "key": "Zhaozy",
@@ -316,8 +281,7 @@
             "searchable": "1",
             "quickSearch": "1",
             "filterable": "0",
-            "ext": "http://ali.饭太硬.ml/tok",
-            "jar": "https://ghproxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/jar/custom_spider.jar"
+            "ext": "http://ali.饭太硬.ml/tok"
         },
         {
             "key": "菜狗",
