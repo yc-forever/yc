@@ -520,6 +520,16 @@
             "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/饭团.js"
         },
         {
+            "key": "午夜影视",
+            "name": "🍭 午夜影视",
+            "type": 3,
+            "searchable": "1",
+            "quickSearch": "1",
+            "filterable": "1",
+            "api": "https://gitcode.net/qq_32394351/dr_py/-/raw/master/libs/drpy2.min.js",
+            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/js/午夜影视.js"
+        },
+        {
             "key": "TVA云播",
             "name": "🍭 TVA云播",
             "type": 3,
