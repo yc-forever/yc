@@ -537,9 +537,14 @@
             "url": "Demo"
         },
         {
-            "name": "Web聚合",
-            "type": 3,
-            "url": "Web"
+            "name": "Json并发",
+            "type": 2,
+            "url": "Parallel"
+        },
+        {
+            "name": "Json轮询",
+            "type": 2,
+            "url": "Sequence"
         },
         {
             "name": "全部",
