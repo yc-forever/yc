@@ -532,14 +532,9 @@
     ],
     "parses": [
         {
-            "name": "解析聚合",
-            "type": 3,
-            "url": "Demo"
-        },
-        {
-            "name": "Web解析聚合",
-            "type": 3,
-            "url": "Web"
+            "name": "Json轮询",
+            "type": 2,
+            "url": "Sequence"
         },
         {
             "name": "Json并发",
@@ -547,17 +542,49 @@
             "url": "Parallel"
         },
         {
-            "name": "Json轮询",
-            "type": 2,
-            "url": "Sequence"
+            "name": "解析聚合",
+            "type": 3,
+            "url": "Demo"
         },
         {
-            "name": "8090",
+            "name": "Q1解析",
             "type": 1,
-            "url": "https://www.8090g.cn/?url="
+            "url": "https://parse.ikunfk.cc/parse/sign/c092dfdaea71d857e79a3738b5ada748?url=",
+            "header": {
+                "User-Agent": "Mozilla/5.0"
+            }
         },
         {
-            "name": "可遇不可求",
+            "name": "Q1官解",
+            "type": 1,
+            "url": "https://parse.ikunfk.cc/parse/sign/20221230?url=",
+            "header": {
+                "User-Agent": "Mozilla/5.0"
+            }
+        },
+        {
+            "name": "刚刚走过",
+            "type": 1,
+            "url": "http://jx.fuqizhishi.com:63/API.php?appkey=feimao&url=",
+            "header": {
+                "User-Agent": "Mozilla/5.0"
+            }
+        },
+        {
+            "name": "云星解析",
+            "type": 1,
+            "url": "https://chaloli.cn/api/?key=454af70ae4c2f8369527a16413ed27ba&url=",
+            "header": {
+                "User-Agent": "Mozilla/5.0"
+            }
+        },
+        {
+            "name": "风起兖州",
+            "type": 0,
+            "url": "http://jx.gbxy.net.cn/?url="
+        },
+        {
+            "name": "keyu",
             "type": 1,
             "url": "http://newjiexi.gotka.top/keyu3.php?url=",
             "ext": {
@@ -578,208 +605,13 @@
                     "sohu",
                     "bilibili",
                     "哔哩哔哩",
-                    "哔哩",
-                    "leshi",
-                    "cntv",
-                    "CNTV",
-                    "xigua",
-                    "XIGUA"
-                ],
-                "header": {
-                    "User-Agent": "okhttp/4.1.0"
-                }
-            }
-        },
-        {
-            "name": "很牛逼",
-            "type": 1,
-            "url": "http://rxjx.kuanjv.com/allm3u8.php?url=",
-            "ext": {
-                "flag": [
-                    "qq",
-                    "腾讯",
-                    "qiyi",
-                    "爱奇艺",
-                    "奇艺",
-                    "youku",
-                    "优酷",
-                    "mgtv",
-                    "芒果",
-                    "letv",
-                    "leshi",
-                    "LS",
-                    "pptv",
-                    "PPTV",
-                    "sohu",
-                    "bilibili",
-                    "哔哩哔哩",
                     "哔哩"
                 ],
                 "header": {
                     "User-Agent": "okhttp/4.1.0"
                 }
             }
-        },
-        {
-            "name": "rxjx",
-            "type": 1,
-            "url": "http://rxjx.kuanjv.com/allm3u8.php?url="
-        },
-        {
-            "name": "xmflv",
-            "type": 0,
-            "url": "https://jx.xmflv.com/?url="
-        },
-        {
-            "name": "freejson",
-            "type": 0,
-            "url": "https://h5.freejson.xyz/player/?url="
-        },
-        {
-            "name": "parwix稳定",
-            "type": 0,
-            "url": "https://jx.bozrc.com:4433/player/?url=",
-            "ext": {
-                "flag": [
-                    "qq",
-                    "腾讯",
-                    "qiyi",
-                    "iqiyi",
-                    "爱奇艺",
-                    "奇艺",
-                    "youku",
-                    "优酷",
-                    "mgtv",
-                    "芒果",
-                    "letv",
-                    "乐视",
-                    "pptv",
-                    "PPTV",
-                    "sohu",
-                    "bilibili",
-                    "哔哩哔哩",
-                    "哔哩"
-                ]
-            }
-        },
-        {
-            "name": "油果",
-            "type": 1,
-            "url": "http://json.youguo520.top/fufeng/?url=",
-            "ext": {
-                "flag": [
-                    "qq",
-                    "腾讯",
-                    "qiyi",
-                    "iqiyi",
-                    "爱奇艺",
-                    "奇艺",
-                    "youku",
-                    "优酷",
-                    "mgtv",
-                    "芒果",
-                    "letv",
-                    "乐视",
-                    "pptv",
-                    "PPTV",
-                    "sohu",
-                    "bilibili",
-                    "哔哩哔哩",
-                    "哔哩"
-                ],
-                "header": {
-                    "User-Agent": "Dart/2.14 (dart:io)"
-                }
-            }
-        },
-        {
-            "name": "懒懒1",
-            "type": 1,
-            "url": "http://123.57.56.94:9931/lanlan/?url="
-        },
-        {
-            "name": "EXO",
-            "type": 0,
-            "url": "https://rx.69mj.com/?url=",
-            "ext": {
-                "flag": [
-                    "rx",
-                    "qq",
-                    "腾讯",
-                    "qiyi",
-                    "爱奇艺",
-                    "奇艺",
-                    "youku",
-                    "优酷",
-                    "mgtv",
-                    "芒果"
-                ]
-            }
-        },
-        {
-            "name": "懒懒2",
-            "type": 1,
-            "url": "http://lanlan.ckflv.cn/?url=",
-            "ext": {
-                "flag": [
-                    "qiyi",
-                    "qq",
-                    "letv",
-                    "sohu",
-                    "youku",
-                    "mgtv",
-                    "bilibili",
-                    "wasu",
-                    "xigua",
-                    "1905"
-                ]
-            }
-        },
-        {
-            "name": "parwix",
-            "type": 0,
-            "url": "https://jx.parwix.com:4433/player/?url="
         }
-    ],
-    "flags": [
-        "youku",
-        "qq",
-        "QQ",
-        "iqiyi",
-        "qiyi",
-        "letv",
-        "sohu",
-        "tudou",
-        "pptv",
-        "PPTV",
-        "mgtv",
-        "ltnb",
-        "rx",
-        "CL4K",
-        "xfyun",
-        "wuduzy",
-        "wasu",
-        "bilibili",
-        "renrenmi",
-        "xmm",
-        "xigua",
-        "m1905",
-        "funshion",
-        "cntv",
-        "CNTV",
-        "XIGUA",
-        "letv",
-        "leshi",
-        "LS",
-        "乐视",
-        "西瓜",
-        "优酷",
-        "芒果",
-        "腾讯",
-        "爱奇艺",
-        "奇艺",
-        "哔哩哔哩",
-        "哔哩"
     ],
     "ijk": [
         {
@@ -812,7 +644,7 @@
                 },
                 {
                     "category": 1,
-                    "name": "http-detect-range-support",
+                    "name": "http-detect-rangeupport",
                     "value": "0"
                 },
                 {
@@ -832,7 +664,7 @@
                 },
                 {
                     "category": 4,
-                    "name": "enable-accurate-seek",
+                    "name": "enable-accurateeek",
                     "value": "0"
                 },
                 {
@@ -892,7 +724,7 @@
                 },
                 {
                     "category": 1,
-                    "name": "http-detect-range-support",
+                    "name": "http-detect-rangeupport",
                     "value": "0"
                 },
                 {
@@ -912,7 +744,7 @@
                 },
                 {
                     "category": 4,
-                    "name": "enable-accurate-seek",
+                    "name": "enable-accurateeek",
                     "value": "0"
                 },
                 {
