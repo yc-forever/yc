@@ -40,8 +40,7 @@
             "searchable": "0",
             "quickSearch": "0",
             "filterable": "1",
-            "ext": "https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/txt/bili.json",
-            "jar": "https://ghproxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/jar/custom_spider.jar"
+            "ext": "85b2986381a134ba3ebbaf25ae8138e7#https://ghproxy.com/https://raw.githubusercontent.com/yc-forever/yc/main/txt/bili.json"
         },
         {
             "key": "虎牙直播",
