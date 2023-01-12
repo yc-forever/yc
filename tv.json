@@ -236,7 +236,7 @@
             "key": "纸条",
             "name": "🍦 纸条",
             "type": 3,
-            "api": "csp_Gitcafe",
+            "api": "csp_Paper",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
@@ -246,7 +246,7 @@
             "key": "AliPS",
             "name": "🍦 盘搜",
             "type": "3",
-            "api": "csp_AliPS",
+            "api": "csp_PanSou",
             "searchable": "1",
             "quickSearch": "1",
             "filterable": "0",
@@ -266,7 +266,7 @@
             "key": "Upso",
             "name": "🍦 云搜",
             "type": "3",
-            "api": "csp_Upso",
+            "api": "csp_UpYun",
             "searchable": "1",
             "quickSearch": "1",
             "filterable": "0",
@@ -480,8 +480,7 @@
             "searchable": "1",
             "quickSearch": "1",
             "filterable": "0",
-            "ext": "http://ali.饭太硬.ml/tok",
-            "jar": "https://ghproxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/jar/custom_spider.jar"
+            "ext": "http://ali.饭太硬.ml/tok"
         }
     ],
     "lives": [
